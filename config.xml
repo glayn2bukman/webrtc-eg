@@ -10,6 +10,10 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14"/>
     
+    <gap:config-file platform="android" parent="/manifest" mode="add">
+        <uses-permission android:name="android.permission.CAMERA" />
+    </gap:config-file>  
+
     <!-- lock to portait -->
     <preference name="orientation" value="portrait" />
 
