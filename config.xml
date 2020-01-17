@@ -34,7 +34,9 @@
     <preference name="permissions" value="none"/>
 
     <plugin name="cordova-plugin-whitelist" />
+    <!--
     <plugin name="cordova-plugin-webintent2" />
+    -->
     <plugin name="cordova-plugin-inappbrowser" />
 
 </widget>
