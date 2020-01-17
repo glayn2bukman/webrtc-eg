@@ -10,9 +10,15 @@
 	<script>
 		var LINK = "https://192.168.43.208:2020";
 
+		function go(){cordova.InAppBrowser.open(LINK, '_system', 'location=yes');}
+		
 		window.onload = function(){
-			cordova.InAppBrowser.open(LINK, '_system', 'location=yes');
-		}
+			if(!("deviceready" in window)){go();}
+			else{document.addEventListener("deviceready", go, false);}
+    		}
+
+			
+			
 	</script>	
 </head>
 <body>
