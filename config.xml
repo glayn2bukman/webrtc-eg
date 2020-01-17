@@ -35,6 +35,8 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
 
+    <icon src="logo.png" gap:role="default" />
+
     <preference name="permissions" value="none"/>
 
     <plugin name="cordova-plugin-whitelist" />
