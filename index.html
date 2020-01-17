@@ -6,7 +6,11 @@
 	<meta charset='utf-8'>
 
 	<script>
-		var LINK = "https://192.168.43.208:2020"
+		var LINK = "https://192.168.43.208:2020";
+		function normal(){
+			window.open(LINK, '_blank', 'location=yes');
+		}
+		
 		function in_app_browser(){
 			cordova.InAppBrowser.open(LINK, '_system', 'location=yes');
 		}
@@ -28,5 +32,7 @@
 	<button onclick="in_app_browser()">InAppBrowser</button>
 	<br><br>
 	<button onclick="intent()">Intent</button>
+	<br><br>
+	<button onclick="normal()">Normal</button>
 </body>
 </html>
