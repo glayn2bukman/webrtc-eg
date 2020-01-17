@@ -17,6 +17,10 @@
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
     
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    
     <!-- use latest version of phonegap...this version is displayed in the phonegap web -->
     <preference name="phonegap-version" value="cli-7.0.1" />
 
