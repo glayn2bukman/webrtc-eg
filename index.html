@@ -8,7 +8,11 @@
 	<script>
 		var LINK = "https://192.168.43.208:2020";
 		function normal(){
-			cordova.InAppBrowser.open(LINK, '_blank', 'location=yes');
+			try{
+				cordova.InAppBrowser.open(LINK, '_blank', 'location=yes');
+			catch(e){
+				alert(e);
+			}
 		}
 		
 		function in_app_browser(){
