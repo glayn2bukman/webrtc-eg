@@ -9,36 +9,12 @@
 
 	<script>
 		var LINK = "https://192.168.43.208:2020";
-		function normal(){
-			try{
-				cordova.InAppBrowser.open(LINK, '_blank', 'location=yes');
-			}catch(e){
-				alert(e);
-			}
-		}
-		
-		function in_app_browser(){
+
+		window.onload = function(){
 			cordova.InAppBrowser.open(LINK, '_system', 'location=yes');
-		}
-		
-		function intent(){
-			window.plugins.webintent.startActivity({
-				action: window.plugins.webintent.ACTION_VIEW,
-				url:  "googlechrome://navigate?url="+LINK
-			    },
-			    function() {},
-			    function() {
-				alert('Failed to open URL via Android Intent.');
-			      console.log("Failed to open URL via Android Intent.")
-			    });
 		}
 	</script>	
 </head>
 <body>
-	<button onclick="in_app_browser()">InAppBrowser</button>
-	<br><br>
-	<button onclick="intent()">Intent</button>
-	<br><br>
-	<button onclick="normal()">Normal</button>
 </body>
 </html>
